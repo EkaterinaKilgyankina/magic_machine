@@ -1,8 +1,8 @@
 package com.coffee.magic_machine.controller;
 
-import com.coffee.magic_machine.exception.ErrorMessage;
-import com.coffee.magic_machine.exception.IngredientLackException;
-import com.coffee.magic_machine.exception.NotFoundException;
+import com.coffee.magic_machine.domain.exception.ErrorMessage;
+import com.coffee.magic_machine.domain.exception.IngredientLackException;
+import com.coffee.magic_machine.domain.exception.NotFoundException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;

@@ -1,6 +1,6 @@
 package com.coffee.magic_machine.repository;
 
-import com.coffee.magic_machine.domain.CoffeeStatistic;
+import com.coffee.magic_machine.domain.entity.CoffeeStatistic;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

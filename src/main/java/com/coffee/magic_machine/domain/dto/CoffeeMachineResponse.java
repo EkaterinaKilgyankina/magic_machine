@@ -1,4 +1,4 @@
-package com.coffee.magic_machine.dto;
+package com.coffee.magic_machine.domain.dto;
 
 import lombok.Data;
 

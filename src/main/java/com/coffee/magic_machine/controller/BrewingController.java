@@ -1,10 +1,10 @@
 package com.coffee.magic_machine.controller;
 
-import com.coffee.magic_machine.domain.CoffeeStatistic;
-import com.coffee.magic_machine.dto.MakeCoffeeRequest;
-import com.coffee.magic_machine.dto.CoffeeStatisticResponse;
+import com.coffee.magic_machine.domain.entity.CoffeeStatistic;
+import com.coffee.magic_machine.domain.dto.MakeCoffeeRequest;
+import com.coffee.magic_machine.domain.dto.CoffeeStatisticResponse;
 import com.coffee.magic_machine.mapper.CoffeeStatisticMapper;
-import com.coffee.magic_machine.service.BrewingService;
+import com.coffee.magic_machine.service.BrewService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 @RequestMapping("/coffees")
 public class BrewingController {
-    private final BrewingService brewingService;
+    private final BrewService brewService;
     private final CoffeeStatisticMapper mapper;
 
     @PostMapping
     public CoffeeStatisticResponse getCupOfCoffee(@RequestBody MakeCoffeeRequest request) {
-        final CoffeeStatistic coffeeStatistic = brewingService.brew(request);
+        final CoffeeStatistic coffeeStatistic = brewService.brew(request);
         return mapper.toDto(coffeeStatistic);
     }
 }

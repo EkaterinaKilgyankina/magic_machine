@@ -1,6 +1,6 @@
-package com.coffee.magic_machine.exception;
+package com.coffee.magic_machine.domain.exception;
 
-import com.coffee.magic_machine.domain.IngredientType;
+import com.coffee.magic_machine.domain.entity.IngredientType;
 import lombok.Getter;
 
 @Getter

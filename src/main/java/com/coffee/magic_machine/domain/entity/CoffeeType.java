@@ -1,4 +1,4 @@
-package com.coffee.magic_machine.domain;
+package com.coffee.magic_machine.domain.entity;
 
 public enum CoffeeType {
     ESPRESSO(8, 5, 0),

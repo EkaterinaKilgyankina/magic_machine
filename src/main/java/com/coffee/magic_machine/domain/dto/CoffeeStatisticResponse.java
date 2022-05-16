@@ -1,6 +1,6 @@
-package com.coffee.magic_machine.dto;
+package com.coffee.magic_machine.domain.dto;
 
-import com.coffee.magic_machine.domain.CoffeeType;
+import com.coffee.magic_machine.domain.entity.CoffeeType;
 import lombok.Data;
 import lombok.experimental.Accessors;
 

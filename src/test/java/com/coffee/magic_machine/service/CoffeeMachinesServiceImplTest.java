@@ -1,7 +1,7 @@
 package com.coffee.magic_machine.service;
 
-import com.coffee.magic_machine.domain.CoffeeMachine;
-import com.coffee.magic_machine.exception.NotFoundException;
+import com.coffee.magic_machine.domain.entity.CoffeeMachine;
+import com.coffee.magic_machine.domain.exception.NotFoundException;
 import com.coffee.magic_machine.repository.CoffeeMachineRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -13,7 +13,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Optional;
 
-import static com.coffee.magic_machine.domain.IngredientType.WATER;
+import static com.coffee.magic_machine.domain.entity.IngredientType.WATER;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.*;

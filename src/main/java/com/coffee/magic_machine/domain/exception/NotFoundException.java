@@ -1,4 +1,4 @@
-package com.coffee.magic_machine.exception;
+package com.coffee.magic_machine.domain.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

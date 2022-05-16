@@ -1,8 +1,8 @@
 package com.coffee.magic_machine.service;
 
-import com.coffee.magic_machine.domain.CoffeeMachine;
-import com.coffee.magic_machine.domain.IngredientType;
-import com.coffee.magic_machine.exception.NotFoundException;
+import com.coffee.magic_machine.domain.entity.CoffeeMachine;
+import com.coffee.magic_machine.domain.entity.IngredientType;
+import com.coffee.magic_machine.domain.exception.NotFoundException;
 import com.coffee.magic_machine.repository.CoffeeMachineRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

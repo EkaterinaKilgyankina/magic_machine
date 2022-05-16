@@ -1,10 +1,13 @@
 package com.coffee.magic_machine.service;
 
-import com.coffee.magic_machine.domain.*;
-import com.coffee.magic_machine.dto.MakeCoffeeRequest;
-import com.coffee.magic_machine.exception.IngredientLackException;
-import com.coffee.magic_machine.exception.NotAvailableException;
-import com.coffee.magic_machine.exception.NotFoundException;
+import com.coffee.magic_machine.domain.dto.MakeCoffeeRequest;
+import com.coffee.magic_machine.domain.entity.CoffeeMachine;
+import com.coffee.magic_machine.domain.entity.CoffeeStatistic;
+import com.coffee.magic_machine.domain.entity.CoffeeType;
+import com.coffee.magic_machine.domain.entity.IngredientType;
+import com.coffee.magic_machine.domain.exception.IngredientLackException;
+import com.coffee.magic_machine.domain.exception.NotAvailableException;
+import com.coffee.magic_machine.domain.exception.NotFoundException;
 import com.coffee.magic_machine.repository.CoffeeMachineRepository;
 import com.coffee.magic_machine.repository.CoffeeStatisticsRepository;
 import lombok.AllArgsConstructor;
@@ -14,7 +17,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 @Service
 @AllArgsConstructor
-public class BrewServiceImpl implements BrewingService {
+public class BrewServiceImpl implements BrewService {
     private final static ReentrantLock LOCK = new ReentrantLock();
     private final CoffeeMachineRepository coffeeMachineRepository;
     private final CoffeeStatisticsRepository coffeeStatisticsRepository;

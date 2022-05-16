@@ -1,10 +1,10 @@
 package com.coffee.magic_machine.controller;
 
-import com.coffee.magic_machine.domain.CoffeeStatistic;
-import com.coffee.magic_machine.domain.CoffeeType;
-import com.coffee.magic_machine.dto.MakeCoffeeRequest;
+import com.coffee.magic_machine.domain.entity.CoffeeStatistic;
+import com.coffee.magic_machine.domain.entity.CoffeeType;
+import com.coffee.magic_machine.domain.dto.MakeCoffeeRequest;
 import com.coffee.magic_machine.mapper.CoffeeStatisticMapper;
-import com.coffee.magic_machine.service.BrewingService;
+import com.coffee.magic_machine.service.BrewService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.junit.jupiter.api.BeforeEach;
@@ -38,7 +38,7 @@ public class BrewingControllerTest {
     BrewingController controller;
     private MockMvc mockMvc;
     @MockBean
-    private BrewingService brewingService;
+    private BrewService brewService;
 
     @BeforeEach
     void setUp() {
@@ -59,7 +59,7 @@ public class BrewingControllerTest {
                 .setType(CoffeeType.ESPRESSO);
 
         //when
-        when(brewingService.brew(request)).thenReturn(coffeeStatistic);
+        when(brewService.brew(request)).thenReturn(coffeeStatistic);
 
         //then
         mockMvc.perform(post("/coffees")

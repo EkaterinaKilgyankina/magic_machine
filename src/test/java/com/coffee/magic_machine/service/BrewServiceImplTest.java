@@ -1,10 +1,10 @@
 package com.coffee.magic_machine.service;
 
-import com.coffee.magic_machine.domain.CoffeeMachine;
-import com.coffee.magic_machine.domain.CoffeeStatistic;
-import com.coffee.magic_machine.dto.MakeCoffeeRequest;
-import com.coffee.magic_machine.exception.IngredientLackException;
-import com.coffee.magic_machine.exception.NotAvailableException;
+import com.coffee.magic_machine.domain.entity.CoffeeMachine;
+import com.coffee.magic_machine.domain.entity.CoffeeStatistic;
+import com.coffee.magic_machine.domain.dto.MakeCoffeeRequest;
+import com.coffee.magic_machine.domain.exception.IngredientLackException;
+import com.coffee.magic_machine.domain.exception.NotAvailableException;
 import com.coffee.magic_machine.repository.CoffeeMachineRepository;
 import com.coffee.magic_machine.repository.CoffeeStatisticsRepository;
 import org.assertj.core.api.Assertions;
@@ -18,8 +18,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Optional;
 
-import static com.coffee.magic_machine.domain.CoffeeType.CAPPUCCINO;
-import static com.coffee.magic_machine.domain.CoffeeType.ESPRESSO;
+import static com.coffee.magic_machine.domain.entity.CoffeeType.CAPPUCCINO;
+import static com.coffee.magic_machine.domain.entity.CoffeeType.ESPRESSO;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
