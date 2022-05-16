@@ -1,6 +1,7 @@
 package com.coffee.magic_machine.service;
 
 import com.coffee.magic_machine.domain.*;
+import com.coffee.magic_machine.dto.MakeCoffeeRequest;
 import com.coffee.magic_machine.exception.IngredientLackException;
 import com.coffee.magic_machine.exception.NotAvailableException;
 import com.coffee.magic_machine.exception.NotFoundException;

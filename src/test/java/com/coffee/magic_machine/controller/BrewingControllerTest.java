@@ -2,7 +2,7 @@ package com.coffee.magic_machine.controller;
 
 import com.coffee.magic_machine.domain.CoffeeStatistic;
 import com.coffee.magic_machine.domain.CoffeeType;
-import com.coffee.magic_machine.domain.MakeCoffeeRequest;
+import com.coffee.magic_machine.dto.MakeCoffeeRequest;
 import com.coffee.magic_machine.mapper.CoffeeStatisticMapper;
 import com.coffee.magic_machine.service.BrewingService;
 import com.fasterxml.jackson.databind.ObjectMapper;

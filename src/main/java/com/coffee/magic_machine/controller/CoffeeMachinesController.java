@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 @RequestMapping("/coffee-machines")
 public class CoffeeMachinesController {
-    CoffeeMachinesService maintainService;
-    CoffeeMachineMapper mapper;
+    private final CoffeeMachinesService maintainService;
+    private final CoffeeMachineMapper mapper;
 
     @PutMapping("/{id}/ingredients")
     public CoffeeMachineResponse addIngredient(@PathVariable Long id,

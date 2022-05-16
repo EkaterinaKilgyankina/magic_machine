@@ -1,0 +1,10 @@
+
+services:
+  p1:
+    image: postgres
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_DB: magic_machine
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 1111

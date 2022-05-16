@@ -9,5 +9,4 @@ import org.mapstruct.Mapper;
 public interface CoffeeMachineMapper {
 
     CoffeeMachineResponse toDto (CoffeeMachine coffeeMachine);
-
 }

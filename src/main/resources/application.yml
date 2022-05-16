@@ -10,9 +10,6 @@ spring:
       minimum-idle: 1
       maximum-pool-size: 10
       pool-name: ${spring.application.name}-pool
-    username: user
-    password: 1111
-    url: jdbc:postgresql://localhost:5432/magic_machine
   application:
     name: magic_machine
   springdoc:
@@ -22,6 +19,13 @@ spring:
 server:
   port: 8080
 
-jwt:
-  sessionTime: 120000000
-  secret: secret_key
+---
+
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    username: user
+    password: 1111
+    url: jdbc:postgresql://localhost:5432/magic_machine
